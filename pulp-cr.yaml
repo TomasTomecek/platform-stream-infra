@@ -1,0 +1,12 @@
+apiVersion: repo-manager.pulpproject.org/v1alpha1
+kind: Pulp
+metadata:
+  name: pulp
+  namespace: platform-stream
+spec:
+  api:
+    replicas: 1
+  content:
+    replicas: 1
+  worker:
+    replicas: 1
